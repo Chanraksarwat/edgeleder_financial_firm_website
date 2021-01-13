@@ -116,6 +116,7 @@ img {
     z-index: 10;
 }
 
+
 /* Icons */
 .icons {
     padding: 100px 30px 100px;
@@ -158,6 +159,9 @@ img {
 
 
 /* Callback Form */
+.contact {
+    margin-bottom: 100px;
+}
 .callback-form {
     width: 100%;
     padding: 20px 0;
@@ -171,7 +175,9 @@ img {
 
 .form-control {
     margin-bottom:20px;
+    background-color: #f5f5f5;
 }
+
 
 .callback-form input {
     width: 100%;
@@ -189,4 +195,64 @@ img {
     margin-top: 20px;
     border: none;
     font-size: 18px;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+}
+
+.footer .social a {
+    color: #fff;
+}
+
+.footer a:hover {
+    color: #4cc587;
+}
+
+.footer .social > * {
+    margin-right: 30px;
+}
+
+.footer p {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+
+/* Mobile */
+@media(max-width: 768px){
+    .navbar {
+        flex-direction: column;
+        height: 120px;
+        padding: 20px;
+
+    }
+
+    .navbar .logo {
+        font-size: 26px;
+    }
+
+    .navbar a {
+        padding: 0px 10px;
+        margin: 0 3px;
+    }
+
+    .flex-items {
+        flex-direction: column;
+    }
+
+    .flex-items > div {
+        margin-bottom: 50px;
+    }
+
+    .flex-columns, .flex-grid .column {
+        flex: 100%;
+        max-width: 100%;
+    }
 }
